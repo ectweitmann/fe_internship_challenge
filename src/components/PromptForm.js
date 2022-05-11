@@ -6,17 +6,21 @@ import '../styles/PromptForm.css';
 const PromptForm = () => {
   const [prompt, setPrompt] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
-  let imgSrc;
+  let img;
   let formButton;
 
   if (isSubmitted) {
-    console.log('if', isSubmitted);
-    imgSrc = activeAI;
-    formButton = <button type="button" onClick={e => resetForm(e)}>Reset</button>
+    img = {
+      src: activeAI,
+      alt: 'active AI'
+    };
+    formButton = <button onClick={e => resetForm(e)}>Reset</button>
   } else {
-    console.log('else', isSubmitted);
-    imgSrc = inactiveAI;
-    formButton = <button onClick={e => submitForm(e)}>Submit</button>
+    img = {
+      src: inactiveAI,
+      alt: 'inactive AI'
+    };
+    formButton = <button>Submit</button>
 
   }
   const submitForm = (e) => {
@@ -31,7 +35,7 @@ const PromptForm = () => {
   }
 
   return (
-    <form>
+    <form onSubmit={e => submitForm(e)}>
       <label htmlFor="inputPrompt">Enter prompt</label>
       <textarea
         id="inputPrompt"
@@ -39,8 +43,9 @@ const PromptForm = () => {
         name="inputPrompt"
         value={prompt}
         onChange={(e) => setPrompt(e.target.value)}
+        required
       />
-      <img src={imgSrc} className="image-ai" />
+      <img src={img.src} className="image-ai" alt={img.alt} />
       {formButton}
     </form>
   );
