@@ -1,12 +1,16 @@
 import React from 'react';
+import PromptForm from './PromptForm';
 import '../styles/App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Fun with AI</h1>
-      </header>
+    <div className="base-background">
+      <div className="content-background">
+        <header className="App-header">
+          <h1>Fun with AI</h1>
+        </header>
+        <PromptForm />
+      </div>
     </div>
   );
 }
