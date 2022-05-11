@@ -1,4 +1,5 @@
 import React,{ useState, useEffect } from 'react';
+import { postPrompt } from '../apiCalls';
 import inactiveAI from '../assets/inactiveAI.png';
 import activeAI from '../assets/activeAI.png';
 import '../styles/PromptForm.css';
@@ -22,10 +23,11 @@ const PromptForm = () => {
     };
     formButton = <button>Submit</button>
   }
-  
+
   const submitForm = (e) => {
     e.preventDefault();
     setIsSubmitted(true);
+    //postPrompt(prompt);
   }
 
   const resetForm = (e) => {
