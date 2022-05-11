@@ -21,8 +21,8 @@ const PromptForm = () => {
       alt: 'inactive AI'
     };
     formButton = <button>Submit</button>
-
   }
+  
   const submitForm = (e) => {
     e.preventDefault();
     setIsSubmitted(true);
