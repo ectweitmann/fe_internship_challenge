@@ -1,3 +1,5 @@
+import { cleanResponseData } from './utils';
+
 export const postPrompt = (prompt) => {
   return fetch("https://api.openai.com/v1/engines/text-curie-001/completions", {
     method: "Post",
@@ -15,6 +17,6 @@ export const postPrompt = (prompt) => {
     })
   })
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(data => cleanResponseData(data))
     .catch(err => console.error(err));
 }
