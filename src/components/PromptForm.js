@@ -3,11 +3,13 @@ import { postPrompt } from '../apiCalls';
 import inactiveAI from '../assets/inactiveAI.png';
 import activeAI from '../assets/activeAI.png';
 import '../styles/PromptForm.css';
+import 'animate.css';
 
 const PromptForm = ({ setResponseLog }) => {
   const [prompt, setPrompt] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [response, setResponse] = useState(null);
+  const [animation, setAnimation] = useState('');
   let img;
   let formButton;
   let responseBox;
@@ -29,9 +31,11 @@ const PromptForm = ({ setResponseLog }) => {
   const submitForm = (e) => {
     e.preventDefault();
     setIsSubmitted(true);
+    setAnimation('animate__animated animate__pulse animate__infinite');
     postPrompt(prompt)
       .then(data => {
         setResponse(data.response);
+        setAnimation('');
         setResponseLog(prevResponseLog => {
           return [
             {
@@ -71,7 +75,7 @@ const PromptForm = ({ setResponseLog }) => {
         required
       />
       <div className="response-container">
-        <img src={img.src} className="image-ai" alt={img.alt} />
+        <img src={img.src} className={`image-ai ${animation}`} alt={img.alt} />
         {response && responseBox}
       </div>
       {formButton}
