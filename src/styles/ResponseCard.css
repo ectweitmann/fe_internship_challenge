@@ -1,0 +1,26 @@
+.response-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 1em;
+  gap: 1em;
+  background-color: #D0D8DA;
+}
+
+.response-section-labels {
+  font-weight: bold;
+}
+
+.prompt-line-wrapper,
+.response-line-wrapper {
+  display: flex;
+}
+
+.prompt-line-wrapper {
+  gap: 2.1em;
+}
+
+.response-line-wrapper {
+  gap: 1em;
+}
