@@ -67,6 +67,7 @@ const PromptForm = ({ setResponseLog }) => {
         name="inputPrompt"
         value={prompt}
         onChange={(e) => setPrompt(e.target.value)}
+        disabled={isSubmitted}
         required
       />
       <div className="response-container">
