@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PromptForm from './PromptForm';
+import ResponseLog from './ResponseLog';
 import '../styles/App.css';
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
         <header className="App-header">
           <h1>Fun with AI</h1>
         </header>
-        <PromptForm setResponseLog={setResponseLog}/>
+        <PromptForm setResponseLog={setResponseLog} />
+        <ResponseLog responseLog={responseLog} />
       </div>
     </div>
   );
