@@ -12,12 +12,14 @@ label {
 }
 
 .input-prompt {
-  resize: none;
+  resize: vertical;
   width: 100%;
   min-height: 100px;
+  max-height: 225px;
   box-sizing: border-box;
   border: 1px solid gray;
   border-radius: 0.5em;
+  padding: 5px;
 }
 
 .response-container {
@@ -51,8 +53,8 @@ label {
 button {
   width: 6em;
   height: 2em;
-  color: white;
   background-color: #48C9E4;
+  color: black;
   border: none;
   border-radius: 0.5em;
   font-size: large;
@@ -62,6 +64,7 @@ button {
 
 button:hover {
   background-color: #25bfdf;
+  color: white;
 }
 
 @media screen and (max-width: 800px) {
