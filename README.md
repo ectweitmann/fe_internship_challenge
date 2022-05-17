@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Fun with AI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## TABLE OF CONTENTS
+- [Project Overview](#overview)
+- [Application Demo](#application-demo)
+- [Setup Instructions](#setup-instructions)
+- [Tech Stack](#technologies-used)
+- [Project Materials](#project-materials)
+- [Credits](#credits)
+- [Author](#author)
 
-## Available Scripts
+## OVERVIEW
+*Fun with AI*, is an application built with the OpenAI API [completions endpoint](https://beta.openai.com/docs/guides/completion) and uses the “text-curie-001” engine. A user can enter a prompt, submit it, receive an AI generated response, and then reset the form and repeat the process. In addition all prompt response pairings are stored and displayed in chronological order for a user to review.
 
-In the project directory, you can run:
 
-### `npm start`
+## APPLICATION DEMO
+Below is a walkthrough of the basic user flow of adding a prompt, submitting it, receiving a response, and resetting the form:  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![Fun with AI](https://media.giphy.com/media/cprmxHpPPn7F6Fmh8H/giphy.gif) 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Responses in the response log are displayed in reverse-chronological order (meaning that the most recent response is displayed first), and the log updates after every new submission!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Fun with AI](https://media.giphy.com/media/qHA2CtD2LWRzZkIaKF/giphy.gif)
 
-### `npm run build`
+A prompt must be entered in order to submit the form. If a user tries to submit the form without entering a prompt, an alert will pop up indicating that the input field must be filled out. Similarly, after the form has been submitted, the input field is uneditable until after the form is reset. This is done by clicking the reset button.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Fun with AI](https://media.giphy.com/media/JzeDwzYdWH1PumlLec/giphy.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Fun with AI](https://media.giphy.com/media/kHBMqLHN43qktkhy8a/giphy.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Finally, the application is fully responsive to all viewports!
 
-### `npm run eject`
+![Fun with AI](https://media.giphy.com/media/PC2MIJHyyUQjwunRj9/giphy.gif)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Features
+- A user can add a prompt, submit it, receive an AI generated response, and reset the form to submit another prompt.
+- The application is fully tabbable and possesses a 100% Lighthouse Accessibility Audit Score.
+- The application is responsive to all viewports (phones, tablets, laptops, etc.)
+- All user flows are tested via Cypress.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## SETUP INSTRUCTIONS
+- Copy the SSH clone address
+- Run ```git clone git@github.com:ectweitmann/fe_internship_challenge.git``` in your repo
+- `cd` in to the cloned repo, and run ```npm install```
+- Finally run ```npm start``` and visit localhost:3000
+### INSTRUCTIONS FOR RUNNING CYPRESS TEST SUITE
+- Run ```npm start``` in your terminal
+- Open a second tab in your terminal and make sure you are still inside the project repo
+- Run ```npm run cypress``` 
+- After the Cypress dashboard renders, click on the link that reads: "► Run 1 integration spec"
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## TECHNOLOGIES USED 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+![OpenAI](https://tm.ibxk.com.br/2019/07/24/24010320131186.jpg?ims=102x28)
+![Webpack](https://img.shields.io/badge/Webpack-8DD6F9?style=for-the-badge&logo=Webpack&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+![Atom](https://img.shields.io/badge/Atom-%2366595C.svg?style=for-the-badge&logo=atom&logoColor=white)
 
-## Learn More
+## PROJECT MATERIALS
+- [Wireframe](https://www.figma.com/file/oT7useUaxjgZoV9QRoDgin/Shopify-FE-Internship-Challenge?node-id=0%3A1)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## CREDITS:
+<a href="https://www.flaticon.com/free-icons/crystal-ball" title="crystal ball icons">Crystal ball icons created by Smashicons - Flaticon</a>
 
-### Code Splitting
+<a href="https://www.flaticon.com/free-icons/learn" title="learn icons">Learn icons created by wanicon - Flaticon</a>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## AUTHOR:
+Ethan Tweitmann
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ethantweitmann/) 
