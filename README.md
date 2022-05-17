@@ -1,5 +1,10 @@
 # Fun with AI
 
+*Shopify Frontend Developer Intern Challenge - Fall 2022*
+
+- Click [HERE](https://docs.google.com/document/d/1O7mCynsz_cBXkEaCFGSZAuvAOY84QVq35l20xJwjOYg/edit#) to view the project spec
+- Click [HERE](https://fun-with-ai-ect.herokuapp.com/) to view the deployed site
+
 ## TABLE OF CONTENTS
 - [Project Overview](#overview)
 - [Application Demo](#application-demo)
@@ -62,6 +67,7 @@ Finally, the application is fully responsive to all viewports!
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
+![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 ![Atom](https://img.shields.io/badge/Atom-%2366595C.svg?style=for-the-badge&logo=atom&logoColor=white)
 
 ## PROJECT MATERIALS
