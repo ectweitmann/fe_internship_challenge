@@ -8,6 +8,7 @@
 ## TABLE OF CONTENTS
 - [Project Overview](#overview)
 - [Application Demo](#application-demo)
+- [Features](#features)
 - [Setup Instructions](#setup-instructions)
 - [Tech Stack](#technologies-used)
 - [Project Materials](#project-materials)
@@ -38,7 +39,7 @@ Finally, the application is fully responsive to all viewports!
 
 ![Fun with AI](https://media.giphy.com/media/PC2MIJHyyUQjwunRj9/giphy.gif)
 
-## Features
+## FEATURES
 - A user can add a prompt, submit it, receive an AI generated response, and reset the form to submit another prompt.
 - The application is fully tabbable and possesses a 100% Lighthouse Accessibility Audit Score.
 - The application is responsive to all viewports (phones, tablets, laptops, etc.)
